@@ -25,7 +25,7 @@ public class EducationMain {
 
         job.setJarByClass(EducationMain.class);
         job.setMapperClass(EducationMapper.class);
-        job.setReducerClass(EducationReducer.class);
+        job.setReducerClass(EducationReducer2.class);
 
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
