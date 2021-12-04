@@ -1,7 +1,6 @@
 package MP.MaxPartecipants;
 
 import org.apache.hadoop.io.FloatWritable;
-import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 import java.io.IOException;
@@ -18,8 +17,9 @@ public class AvgReducer extends Reducer<Text, FloatWritable, Text, FloatWritable
         	sum += it.get();
         	count++;
         }
+        //after the loop we simply evaluate the sum of all the ages related to the key "text"
         
-        avgValue = (sum/ count);
+        avgValue = (sum/ count); //here we process the average of participant's age
 
         context.write(text, new FloatWritable(avgValue));
     }
