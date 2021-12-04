@@ -28,7 +28,7 @@ public class EducationMapper extends org.apache.hadoop.mapreduce.Mapper<LongWrit
         Matcher m = p.matcher(row[23]);
         if (!m.matches()) return;//we check if the field "Participants age" is composed by only digits or not, in order to avoid
         //exceptions
-        if (row[6].equals("? Unknown ?")) return; //we check if the field of education is unknown: if it is tru we discard the row
+        if (row[6].equals("? Unknown ?")) return; //we check if the field of education is unknown: if it is true we discard the row
 
         context.write(new Text(row[6]), new IntWritable(Integer.parseInt(row[23])));
     }
