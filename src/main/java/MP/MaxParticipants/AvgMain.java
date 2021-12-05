@@ -1,4 +1,4 @@
-package MP.MaxPartecipants;
+package MP.MaxParticipants;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;

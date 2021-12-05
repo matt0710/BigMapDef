@@ -1,4 +1,4 @@
-package MP.MaxPartecipants;
+package MP.MaxParticipants;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -9,7 +9,7 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 import java.util.Date;
 
-public class MaxPartecipantsMain {
+public class MaxParticipantsMain {
     public static void main (String[] args) throws Exception {
 
         long startTime = new Date().getTime();
@@ -22,9 +22,9 @@ public class MaxPartecipantsMain {
         Configuration conf = new Configuration();
         Job job = Job.getInstance(conf, "MaxPartecipantsMain");
 
-        job.setJarByClass(MaxPartecipantsMain.class);
-        job.setMapperClass(MaxPartecipantsMapper.class);
-        job.setReducerClass(MaxPartecipantsReducer.class);
+        job.setJarByClass(MaxParticipantsMain.class);
+        job.setMapperClass(MaxParticipantsMapper.class);
+        job.setReducerClass(MaxParticipantsReducer.class);
 
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);

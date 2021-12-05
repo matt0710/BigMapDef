@@ -1,11 +1,11 @@
-package MP.MaxPartecipants;
+package MP.MaxParticipants;
 
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 import java.io.IOException;
 import java.util.*;
 
-public class MaxPartecipantsReducer extends Reducer<Text, Text, Text, Text> {
+public class MaxParticipantsReducer extends Reducer<Text, Text, Text, Text> {
 
     public void reduce (Text text, Iterable<Text> iterable, Context context) throws IOException, InterruptedException {
 

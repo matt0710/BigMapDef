@@ -1,4 +1,4 @@
-package MP.MaxPartecipants;
+package MP.MaxParticipants;
 
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class MaxPartecipantsMapper extends org.apache.hadoop.mapreduce.Mapper<LongWritable, Text, Text, Text>{
+public class MaxParticipantsMapper extends org.apache.hadoop.mapreduce.Mapper<LongWritable, Text, Text, Text>{
 
     boolean check = true;
     String regex = "[0-9]+";

@@ -1,4 +1,4 @@
-package MP.MaxPartecipants;
+package MP.MaxParticipants;
 
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;

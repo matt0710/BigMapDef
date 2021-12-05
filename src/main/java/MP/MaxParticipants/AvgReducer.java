@@ -1,4 +1,4 @@
-package MP.MaxPartecipants;
+package MP.MaxParticipants;
 
 import org.apache.hadoop.io.FloatWritable;
 import org.apache.hadoop.io.Text;
